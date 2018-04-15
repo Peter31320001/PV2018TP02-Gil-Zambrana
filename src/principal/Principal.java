@@ -39,10 +39,10 @@ public class Principal {
             case 4: exit(0);
         }
     }
+    
     public static void devolverEdadEnSemanas() {
         Punto02 unaFecha = new Punto02();
         unaFecha.ingrFecha();
-        
     }
     
 }
