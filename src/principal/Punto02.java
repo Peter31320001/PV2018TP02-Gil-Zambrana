@@ -52,19 +52,19 @@ public class Punto02 {
         int e;
         e = pasarStringADate().getMonth();
         String estacion;
-        if (e >= 1 || e <= 3) {
+        if (e >= 1 && e <= 3) {
             estacion = "Verano";
             return estacion;
         } else {
-            if (e >= 4 || e <= 6) {
+            if (e >= 4 && e <= 6) {
                 estacion = "Otoño";
                 return estacion;
             } else {
-                if (e >= 7 || e <= 9) {
+                if (e >= 7 && e <= 9) {
                     estacion = "Invierno";
                     return estacion;
                 } else {
-                    if (e >= 10 || e <= 12) {
+                    if (e >= 10 && e <= 12) {
                         estacion = "Primavera";
                         return estacion;
                     } else {
@@ -81,10 +81,9 @@ public class Punto02 {
         Date x = pasarStringADate();
         double p;
         double q;
-        p = ((z.getTime()-x.getTime())/ 86400000)/7;
-        q = p/7;
+        p = ((x.getTime()-z.getTime())/ 86400000)/7;
         int d;
-        d=(int) q;
+        d=(int) p;
         return d;
     }
     public int devDifDias(){
@@ -93,7 +92,7 @@ public class Punto02 {
         ingrFecha();
         Date b = pasarStringADate();
         double c;
-        c = (a.getTime()- b.getTime()) /86400000;
+        c = (b.getTime()- a.getTime()) /86400000;
         int d = (int) c;
         return d;
     }
