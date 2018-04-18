@@ -31,7 +31,7 @@ public class Principal {
         System.out.println("3:Punto1.3");
         System.out.println("4:Punto2.1");
         System.out.println("5:Punto2.2");
-        System.out.println("6:Punto2.3");
+        System.out.println("6:Punto2.3");//esto al parecer no está funcionando correctamente
         System.out.println("7:Punto2.4");
         System.out.println("8:Punto3");
         System.out.println("9:Salir");
